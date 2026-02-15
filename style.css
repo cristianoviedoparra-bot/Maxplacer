@@ -1,0 +1,47 @@
+/* 1. CONFIGURACIÓN DE FUENTE PERSONALIZADA (.OTF) */
+@font-face {
+    font-family: 'MiFuenteLogo'; 
+    /* Cambiamos la extensión a .otf y el formato a opentype */
+    src: url('OPTIMercenaryFive.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --fuente-titulos: 'MiFuenteLogo', sans-serif; 
+    --fuente-cuerpo: 'Montserrat', sans-serif;
+}
+
+/* 2. ESTILOS BASE Y CORRECCIÓN DE LOGO */
+body { 
+    font-family: var(--fuente-cuerpo); 
+}
+
+/* Forzamos la fuente en los encabezados y la clase brand-font */
+h1, h2, h3, .brand-font { 
+    font-family: 'MiFuenteLogo', sans-serif !important; 
+    text-transform: uppercase; 
+}
+
+/* Ajuste específico para asegurar que el texto del logo la reconozca */
+.brand-font {
+    font-family: 'MiFuenteLogo' !important;
+    letter-spacing: 0.05em;
+}
+
+/* Selector ultra-específico para el texto de la barra de navegación */
+nav .brand-font {
+    font-family: 'MiFuenteLogo' !important;
+}
+
+
+/* 3. ANIMACIONES */
+@keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.toast-animate { 
+    animation: slideUp 0.5s ease-out forwards; 
+}
