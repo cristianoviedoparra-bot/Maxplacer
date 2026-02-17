@@ -1,5 +1,5 @@
 // Configuración Global
-const WHATSAPP_NUM = "573147049796"; // Asegúrate de poner tu número aquí
+const WHATSAPP_NUM = "573173203940"; // Asegúrate de poner tu número aquí
 
 // Inicializar iconos de Lucide
 lucide.createIcons();
