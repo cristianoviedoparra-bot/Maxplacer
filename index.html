@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAX PLACER - Sex Shop Online</title>
     
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWWHXGRC9Q"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HWWHXGRC9Q');
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="tu-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-black text-white selection:bg-red-600">
@@ -16,13 +23,10 @@
     <div id="age-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-4 hidden">
         <div class="max-w-md w-full bg-zinc-900 border border-red-600 rounded-2xl p-8 text-center shadow-2xl">
             <i data-lucide="alert-triangle" class="w-16 h-16 text-red-600 mx-auto mb-4"></i>
-            <h1 class="text-3xl font-bold mb-4">CONTENIDO ADULTO</h1>
-            <p class="text-gray-400 mb-8">Debes ser mayor de 18 años para acceder a este sitio.</p>
-            <button onclick="verifyAge()" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-full transition-all active:scale-95">
+            <h1 class="text-3xl font-bold mb-4 brand-font uppercase">Contenido Adulto</h1>
+            <p class="text-gray-400 mb-8">Este sitio contiene material para adultos. Debes ser mayor de 18 años.</p>
+            <button onclick="verifyAge()" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-full transition-all active:scale-95 brand-font">
                 SOY MAYOR DE EDAD
-            </button>
-            <button onclick="window.location.href='https://www.google.com'" class="mt-4 text-gray-500 hover:text-white text-sm underline block w-full">
-                Salir del sitio
             </button>
         </div>
     </div>
@@ -30,178 +34,102 @@
     <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-zinc-800">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="#inicio" class="flex items-center gap-3">
-                <img src="tu-logo.png" alt="MAX PLACER Logo" class="h-10 w-auto md:h-12 object-contain filter drop-shadow-md">
+                <img src="Logo Max PowerCompleto.png" alt="MAX PLACER" class="h-10 w-auto md:h-12 object-contain">
                 <span class="brand-font text-2xl md:text-5xl tracking-tighter text-red-600">MAX PLACER</span>
             </a>
-            
-            <div class="hidden md:flex space-x-8 text-2xl font-bold uppercase tracking-widest text-gray-300 brand-font">
-                <a href="#productos" class="hover:text-red-500 transition-colors">Productos</a>
-                <a href="#beneficios" class="hover:text-red-500 transition-colors">Beneficios</a>
+            <div class="hidden md:flex space-x-8 text-xl font-bold uppercase brand-font">
+                <a href="productos.html" class="hover:text-red-500 transition-colors">Productos</a>
                 <a href="#contacto" class="hover:text-red-500 transition-colors">Contacto</a>
             </div>
-
-            <button class="md:hidden text-white" onclick="toggleMenu()">
-                <i data-lucide="menu" id="menu-icon"></i>
-            </button>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-b border-zinc-800 p-6 flex flex-col space-y-4 brand-font">
-            <a href="#productos" onclick="toggleMenu()" class="text-xl pb-2 border-b border-zinc-800">Productos</a>
-            <a href="#beneficios" onclick="toggleMenu()" class="text-xl pb-2 border-b border-zinc-800">Beneficios</a>
-            <a href="#contacto" onclick="toggleMenu()" class="text-xl pb-2 border-b border-zinc-800">Contacto</a>
         </div>
     </nav>
 
-    <header id="inicio" class="relative pt-40 pb-20 lg:pt-56 lg:pb-32 overflow-hidden flex items-center justify-center">
+    <header id="inicio" class="relative pt-40 pb-20 overflow-hidden flex items-center justify-center min-h-screen">
         <div class="absolute inset-0 bg-gradient-to-b from-red-900/20 to-black z-0"></div>
-        <div class="absolute inset-0 flex items-center justify-center z-0 pointer-events-none select-none overflow-hidden">
-            <img src="tu-logo.png" alt="" class="w-[120%] max-w-none md:w-[80%] opacity-[0.05] grayscale filter blur-[2px]">
-        </div>
-
         <div class="container mx-auto px-4 relative z-10 text-center">
-            <div class="container mx-auto px-4 relative z-10 text-center">
-    
-    <div class="flex justify-center mb-8">
-        <img src="Logo Max PowerCompleto.png" alt="MAX PLACER" class="h-56 md:h-96 w-auto object-contain drop-shadow-[0_0_15px_rgba(220,38,38,0.5)]">
-    </div>
-
-    <h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight tracking-normal brand-font">
-            <h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight tracking-normal brand-font">
-                ELEVA TU ENERGÍA, <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">DESCUBRE TU MÁXIMO PLACER.</span>
+            <img src="Logo Max PowerCompleto.png" alt="MAX PLACER" class="h-56 md:h-80 mx-auto mb-8 drop-shadow-[0_0_20px_rgba(220,38,38,0.4)]">
+            <h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight brand-font uppercase">
+                Eleva tu energía, <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">descubre tu placer.</span>
             </h1>
-            <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-10 font-medium">
-                Productos naturales diseñados para elevar tu energía y placer al máximo nivel.
-            </p>
-       <!-- <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#productos" class="bg-red-600 hover:bg-red-700 text-white text-lg font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-red-900/50 flex items-center justify-center gap-2">
-                    <i data-lucide="shopping-bag" class="w-5 h-5"></i> Ver Catálogo
-                </a>
-           </div>-->
-        
+            <a href="productos.html" class="inline-block bg-red-600 hover:bg-red-700 text-white text-xl font-bold py-5 px-14 rounded-full transition-all transform hover:scale-105 brand-font uppercase">
+                Ver Catálogo Completo
+            </a>
         </div>
     </header>
 
-    <section id="productos" class="py-20 bg-black">
+    <section class="py-20 bg-black">
         <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
+            <h2 class="text-4xl text-center mb-16 brand-font uppercase">Nuestros <span class="text-red-600">Más Vendidos</span></h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 
-                <div class="bg-zinc-900/50 rounded-3xl overflow-hidden border border-zinc-800 flex flex-col h-full">
-                    <div class="h-64 bg-gradient-to-b from-zinc-800 to-transparent flex items-center justify-center relative p-6">
-                        <span class="absolute top-4 right-4 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded">500ml</span>
-                        <img src="XBULL.png" alt="X-BULL" class="h-48 w-auto object-contain mx-auto drop-shadow-[0_20px_30px_rgba(255,255,255,0.1)]">
-                    </div>
-                    <div class="p-8 flex flex-col flex-grow text-left">
-                        <h3 class="brand-font text-3xl mb-1 italic">X-BULL</h3>
-                        <h4 class="brand-font text-xl mb-4">Energizante</h4>
-                        <p class="text-red-500 brand-font text-2xl mb-6">$30.000 COP</p>
-                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Bebida a base de Borojó, Chontaduro y Noni. Potencia tu energía física y mental.</p>
-                        <ul class="space-y-3 mb-8 text-sm text-gray-500">
-                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i> Combate la fatiga</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i> Registro Invima</li>
-                        </ul>
-                      <button onclick="handleBuyClick('...')" class="mt-auto w-full border-2 border-red-600 text-white text-xl font-bold brand-font py-4 rounded-xl hover:bg-red-600 transition-all tracking-[0.2em] uppercase">
-    Pedir Ahora
-</button>
-                    </div>
+                <div class="bg-zinc-900/50 rounded-3xl border border-zinc-800 p-8 flex flex-col hover:border-red-600/50 transition-all">
+                    <img src="XBULL.png" alt="X-BULL" class="h-64 w-full object-contain mb-6">
+                    <h3 class="brand-font text-3xl mb-2 italic uppercase">X-BULL</h3>
+                    <p class="text-red-500 brand-font text-2xl mb-4">$30.000 COP</p>
+                    <p class="text-gray-400 mb-6 flex-grow">Energía natural a base de Borojó y Chontaduro.</p>
+                    
+                    <button onclick="openModal('X-Bull Energizante')" class="text-red-500 text-xs font-bold mb-4 hover:underline uppercase text-left tracking-widest">+ Más información</button>
+                    
+                    <button onclick="handleBuyClick('X-Bull Energizante')" class="w-full border-2 border-red-600 py-4 rounded-xl font-bold brand-font hover:bg-red-600 uppercase transition-colors">Pedir Ahora</button>
                 </div>
 
-                <div class="bg-zinc-900/50 rounded-3xl overflow-hidden border border-red-600/50 flex flex-col h-full relative shadow-2xl shadow-red-900/20">
-    <div class="bg-red-600 text-center text-[10px] font-black py-1 tracking-[0.2em]">MÁS VENDIDO</div>
-    
-    <div class="h-64 bg-gradient-to-b from-blue-900/20 to-transparent flex items-center justify-center p-6">
-        <img 
-            src="minotauro.png" 
-            alt="Thunder Gel" 
-            class="h-full w-full object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
-        >
-    </div>
+                <div class="bg-zinc-900/50 rounded-3xl border-2 border-red-600 p-8 flex flex-col relative shadow-2xl shadow-red-900/20 transform md:-translate-y-4">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[10px] font-black px-4 py-1 rounded-full">TOP 1</div>
+                    <img src="minotauro.png" alt="Minotauro" class="h-64 w-full object-contain mb-6">
+                    <h3 class="brand-font text-3xl mb-2 italic uppercase">MINOTAURO PROLONG</h3>
+                    <p class="text-red-500 brand-font text-2xl mb-4">$18.000 COP</p>
+                    <p class="text-gray-400 mb-6 flex-grow">Gel retardante para disfrutar sin límites.</p>
+                    
+                    <button onclick="openModal('Minotauro Prolong Gold')" class="text-red-500 text-xs font-bold mb-4 hover:underline uppercase text-left tracking-widest">+ Más información</button>
+                    
+                    <button onclick="handleBuyClick('Minotauro Prolong Gold')" class="w-full bg-red-600 py-4 rounded-xl font-bold brand-font hover:bg-red-700 uppercase transition-colors">Pedir Ahora</button>
+                </div>
 
-    <div class="p-8 flex flex-col flex-grow text-left">
-        <h3 class="brand-font text-3xl mb-4 italic">MINOTAURO PROLONG GOLD</h3>
-        <p class="text-red-500 brand-font text-2xl mb-6">$18.000 COP</p>
-        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Gel efecto retardante masculino. Prolonga la eyaculación y disfruta más.</p>
-        <ul class="space-y-3 mb-8 text-sm text-gray-500">
-            <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i> 
-                Efecto prolongado
-            </li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i> Registro Invima</li>
-        </ul>
-       <button onclick="handleBuyClick('Minotauro Prolog Gold')" class="mt-auto w-full border-2 border-red-600 text-white text-xl font-bold brand-font py-4 rounded-xl hover:bg-red-600 transition-all tracking-[0.2em] uppercase">
-    PEDIR AHORA
-</button>
-    </div>
-</div>
-
-                <div class="bg-zinc-900/50 rounded-3xl overflow-hidden border border-zinc-800 flex flex-col h-full">
-    <div class="h-64 bg-gradient-to-b from-purple-900/20 to-transparent flex items-center justify-center p-6">
-        <img 
-            src="Pastillero 3.png" 
-            alt="PowerS'X" 
-            class="h-full w-full object-contain drop-shadow-[0_10px_20px_rgba(147,51,234,0.3)]"
-        >
-    </div>
-
-    <div class="p-8 flex flex-col flex-grow text-left">
-        <h3 class="brand-font text-3xl mb-4 italic">PowerS'X</h3>
-        <p class="text-red-500 brand-font text-2xl mb-6">$7.000 COP</p>
-        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Pastillas potenciadoras naturales. Erecciones más firmes y recuperación rápida.</p>
-        
-        <ul class="space-y-3 mb-8 text-sm text-gray-500">
-            <li class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i> 
-                Efecto rápido (40 min)
-            </li>
-            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i> Registro Invima</li>
-        </ul>
-
-      <button onclick="handleBuyClick('...')" class="mt-auto w-full border-2 border-red-600 text-white text-xl font-bold brand-font py-4 rounded-xl hover:bg-red-600 transition-all tracking-[0.2em] uppercase">
-    Pedir Ahora
-</button>
-    </div>
-</div>
+                <div class="bg-zinc-900/50 rounded-3xl border border-zinc-800 p-8 flex flex-col hover:border-red-600/50 transition-all">
+                    <img src="Pastillero 3.png" alt="PowerS'X" class="h-64 w-full object-contain mb-6">
+                    <h3 class="brand-font text-3xl mb-2 italic uppercase">PowerS'X</h3>
+                    <p class="text-red-500 brand-font text-2xl mb-4">$7.000 COP</p>
+                    <p class="text-gray-400 mb-6 flex-grow">Potenciador natural de efecto rápido (40 min).</p>
+                    
+                    <button onclick="openModal('PowerS\'X Potenciador')" class="text-red-500 text-xs font-bold mb-4 hover:underline uppercase text-left tracking-widest">+ Más información</button>
+                    
+                    <button onclick="handleBuyClick('PowerS\'X Potenciador')" class="w-full border-2 border-red-600 py-4 rounded-xl font-bold brand-font hover:bg-red-600 uppercase transition-colors">Pedir Ahora</button>
+                </div>
 
             </div>
-            </div>
-    </div> <div class="mt-12 text-center">
-        <p class="text-zinc-500 text-sm md:text-base font-medium flex items-center justify-center gap-2">
-            <i data-lucide="truck" class="w-5 h-5 text-red-600"></i>
-            *Los precios publicados no incluyen el costo de envío
-        </p>
-    </div>
-
-</div> ```
-
-
         </div>
     </section>
 
     <footer id="contacto" class="bg-black py-12 border-t border-zinc-900 text-center">
-    <div class="container mx-auto px-4">
-        <p class="brand-font text-6xl text-red-600 mb-4">MAX PLACER</p>
-        <p class="text-gray-500 text-sm mb-6">Escríbenos para una asesoría personalizada y discreta.</p>
-        
-        <button onclick="handleBuyClick('Asesoría')" class="bg-green-600 hover:bg-green-700 p-4 rounded-full inline-flex items-center gap-2 font-bold transition-all mb-10">
-            <i data-lucide="message-circle"></i> WHATSAPP DE VENTAS
-        </button>
-
-        <div class="flex justify-center gap-6 mb-8">
-            <a href="https://instagram.com/tu_usuario" target="_blank" class="text-gray-400 hover:text-red-600 transition-colors transform hover:scale-110">
-                <i data-lucide="instagram" class="w-8 h-8"></i>
-            </a>
-            <a href="https://facebook.com/tu_usuario" target="_blank" class="text-gray-400 hover:text-red-600 transition-colors transform hover:scale-110">
-                <i data-lucide="facebook" class="w-8 h-8"></i>
-            </a>
-            <a href="https://tiktok.com/@tu_usuario" target="_blank" class="text-gray-400 hover:text-red-600 transition-colors transform hover:scale-110">
-                <i data-lucide="music-2" class="w-8 h-8"></i> 
-            </a>
+        <div class="container mx-auto px-4">
+            <p class="brand-font text-6xl text-red-600 mb-4 tracking-tighter">MAX PLACER</p>
+            <button onclick="handleBuyClick('Asesoría General')" class="bg-green-600 hover:bg-green-700 p-4 rounded-full inline-flex items-center gap-2 font-bold transition-all mb-10">
+                <i data-lucide="message-circle"></i> WHATSAPP DE VENTAS
+            </button>
+            <p class="text-zinc-700 text-[10px] uppercase tracking-[0.2em]">© 2026 MAX PLACER - Sex Shop</p>
         </div>
+    </footer>
 
-        <p class="text-zinc-700 text-[10px] uppercase tracking-[0.2em]">
-            © 2024 MAX PLACER - Todos los derechos reservados
-        </p>
+    <div id="product-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-4 hidden backdrop-blur-sm" onclick="closeModalOutside(event)">
+        <div class="max-w-2xl w-full bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-white/50 hover:text-red-600 transition-colors z-10">
+                <i data-lucide="x-circle" class="w-10 h-10"></i>
+            </button>
+            <div class="p-8 flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <img id="modal-img" src="" alt="" class="w-full h-64 object-contain drop-shadow-2xl">
+                </div>
+                <div class="md:w-1/2 flex flex-col">
+                    <h2 id="modal-title" class="brand-font text-3xl text-red-600 mb-2 italic uppercase"></h2>
+                    <p id="modal-tagline" class="text-xs font-bold text-gray-400 uppercase mb-4 tracking-widest"></p>
+                    <div id="modal-desc" class="text-sm text-gray-400 mb-6 space-y-2 leading-relaxed whitespace-pre-line"></div>
+                    <button id="modal-buy-btn" class="mt-auto w-full bg-red-600 py-4 rounded-xl brand-font hover:bg-red-700 uppercase transition-all">
+                        Pedir por WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
-</footer>
 
     <div id="toast" class="fixed bottom-6 right-6 left-6 md:left-auto bg-white text-black px-6 py-4 rounded-2xl shadow-2xl z-[60] hidden items-center gap-4">
         <i data-lucide="message-circle" class="text-green-600"></i>
@@ -209,5 +137,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
