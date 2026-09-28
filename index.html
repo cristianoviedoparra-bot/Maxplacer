@@ -41,6 +41,13 @@
                 <a href="productos.html" class="hover:text-red-500 transition-colors">Productos</a>
                 <a href="#contacto" class="hover:text-red-500 transition-colors">Contacto</a>
             </div>
+            <button onclick="toggleMenu()" class="md:hidden text-white" aria-label="Abrir menú">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-zinc-800 px-4 py-4 space-y-4 text-lg font-bold uppercase brand-font">
+            <a href="productos.html" class="block hover:text-red-500 transition-colors" onclick="toggleMenu()">Productos</a>
+            <a href="#contacto" class="block hover:text-red-500 transition-colors" onclick="toggleMenu()">Contacto</a>
         </div>
     </nav>
 

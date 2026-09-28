@@ -79,62 +79,62 @@ const infoProductos = {
     'Magnetic': {
         tagline: 'Sutilmente irresistible. Poderosamente tú.',
         desc: 'Bruma facial con feromonas, ácido hialurónico y Vitamina C. Hidrata y resalta tu magnetismo.',
-        img: 'magnetic.png'
+        img: 'magnetic.jpg'
     },
     'Frequency Intense': {
         tagline: 'Más vibración. Más intensidad. Más placer.',
         desc: 'Gel estimulante que activa canales iónicos y oxigena tejidos. Genera oleadas de placer.',
-        img: 'frequency.png'
+        img: 'frequency.jpg'
     },
     'Cool Sensation': {
         tagline: 'Frescura intensa, placer sin límites.',
         desc: 'Lubricante efecto frío que potencia la sensibilidad. Ideal para sexo oral.',
-        img: 'cool.png'
+        img: 'cool.jpg'
     },
     'Cum Sensitive': {
         tagline: 'Realismo y emoción para piel sensible.',
         desc: 'Simula la eyaculación femenina con una fórmula suave. Compatible con juguetes.',
-        img: 'cum.png'
+        img: 'cum.jpg'
     },
     'Cum Neutro': {
         tagline: 'Experiencia auténtica y realista.',
         desc: 'Textura y apariencia real de eyaculación femenina. Sin olor ni sabor.',
-        img: 'cum1.png'
+        img: 'cum1.jpg'
     },
     'Lubricante Cremoso': {
         tagline: 'Sensación Realista y Dulce.',
         desc: 'Reproduce la textura de la eyaculación masculina. Sabor dulce placentero.',
-        img: 'creamy.png'
+        img: 'creamy.jpg'
     },
     'Lubricante 5 Sensaciones': {
         tagline: 'Un viaje para todos tus placeres.',
         desc: 'Frío, calor, sabor y calma con Aloe Vera. Lubricación sedosa duradera.',
-        img: 'sens5.png'
+        img: 'sens5.jpg'
     },
     'Lubricante Natural Elixir': {
         tagline: 'Cuidado íntimo diario y puro.',
         desc: 'Recomendado por ginecólogos. Sin fragancias ni colorantes. pH balanceado.',
-        img: 'natural.png'
+        img: 'natural.jpg'
     },
     'X-Bull Sachet': {
         tagline: 'Estallido natural de energía.',
         desc: 'Potenciador natural para mayor resistencia física y una energía imparable.',
-        img: 'sachet.png' // Revisa si esta imagen es correcta o debe ser otra
+        img: 'sachet.jpg' // Revisa si esta imagen es correcta o debe ser otra
     },
     'X-Bull Vitaminas': {
         tagline: 'Vigor y confianza masculina.',
         desc: 'Suplemento para elevar el estado de ánimo y la vitalidad. Vigor masculino.',
-        img: 'vitaminas.png'
+        img: 'vitaminas.jpg'
     },
     'Friction Gel': {
         tagline: 'Reclama tu placer y firmeza.',
         desc: 'Efecto estrechante que contrae paredes vaginales. Aumenta la fricción.',
-        img: 'friction.png'
+        img: 'friction.jpg'
     },
     'Lubricantes de Sabores Elixir': {
         tagline: 'Pasión, calor y sabor.',
         desc: 'Sabores ardientes: Fresa bombón, coco, chicle y más. Efecto térmico.',
-        img: 'sabor.png'
+        img: 'saboror.jpg'
     }
 };
 

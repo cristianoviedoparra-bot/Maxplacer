@@ -29,6 +29,12 @@
             <div class="hidden md:flex space-x-8 text-2xl font-bold uppercase tracking-widest text-gray-300 brand-font">
                 <a href="index.html" class="hover:text-red-500 transition-colors">Inicio</a>
             </div>
+            <button onclick="toggleMenu()" class="md:hidden text-white" aria-label="Abrir menú">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-zinc-800 px-4 py-4 space-y-4 text-lg font-bold uppercase tracking-widest text-gray-300 brand-font">
+            <a href="index.html" class="block hover:text-red-500 transition-colors">Inicio</a>
         </div>
     </nav>
 
@@ -46,7 +52,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                 
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 flex flex-col hover:border-red-600/50 transition-all backdrop-blur-sm">
-                     <img src="magnetic.png" alt="Magnetic" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
+                     <img src="magnetic.jpg" alt="Magnetic" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
                       <h3 class="brand-font text-2xl mb-2 italic text-red-500">MAGNETIC</h3>
                      <p class="text-gray-400 text-[10px] uppercase mb-2 tracking-widest font-bold">Agua de Rosas + Feromonas</p>
                      <p class="text-sm text-gray-500 mb-6 flex-grow">Bruma facial que hidrata e ilumina, actuando como un aura invisible que resalta tu presencia.</p>
@@ -60,7 +66,7 @@
 
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 flex flex-col hover:border-red-600/50 transition-all backdrop-blur-sm">
     
-    <img src="frequency.png" alt="Frequency" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
+    <img src="frequency.jpg" alt="Frequency" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
     
     <h3 class="brand-font text-2xl mb-2 italic text-red-500">FREQUENCY</h3>
     
@@ -78,7 +84,7 @@
 </div>
 
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 flex flex-col hover:border-red-600/50 transition-all backdrop-blur-sm">
-                    <img src="cool.png" alt="Cool Sensation" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
+                    <img src="cool.jpg" alt="Cool Sensation" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
                     <h3 class="brand-font text-2xl mb-2 italic text-red-500">COOL SENSATION</h3>
                     <p class="text-gray-400 text-[10px] uppercase mb-2 tracking-widest font-bold">Efecto Frío Intenso</p>
                     <p class="text-sm text-gray-500 mb-6 flex-grow">Lubricante a base de agua que proporciona frescura extrema, ideal para juegos previos.</p>
@@ -87,7 +93,7 @@
                 </div>
 
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 flex flex-col hover:border-red-600/50 transition-all backdrop-blur-sm">
-                    <img src="cum.png" alt="Cum Sensitive" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
+                    <img src="cum.jpg" alt="Cum Sensitive" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
                     <h3 class="brand-font text-2xl mb-2 italic text-red-500">CUM SENSITIVE</h3>
                     <p class="text-gray-400 text-[10px] uppercase mb-2 tracking-widest font-bold">Realismo Total</p>
                     <p class="text-sm text-gray-500 mb-6 flex-grow">Simula la eyaculación femenina con una fórmula delicada para pieles muy sensibles.</p>
@@ -96,7 +102,7 @@
                 </div>
 
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 flex flex-col hover:border-red-600/50 transition-all backdrop-blur-sm">
-                    <img src="cum1.png" alt="Cum Neutro" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
+                    <img src="cum1.jpg" alt="Cum Neutro" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
                     <h3 class="brand-font text-2xl mb-2 italic text-red-500">CUM NEUTRO</h3>
                     <p class="text-gray-400 text-[10px] uppercase mb-2 tracking-widest font-bold">Textura Auténtica</p>
                     <p class="text-sm text-gray-500 mb-6 flex-grow">Imita perfectamente la experiencia de la eyaculación femenina, sin olor ni sabor.</p>
@@ -105,7 +111,7 @@
                 </div>
 
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 flex flex-col hover:border-red-600/50 transition-all backdrop-blur-sm">
-                    <img src="creamy.png" alt="Creamy Lube" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
+                    <img src="creamy.jpg" alt="Creamy Lube" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
                     <h3 class="brand-font text-2xl mb-2 italic text-red-500">CREAMY LUBE</h3>
                     <p class="text-gray-400 text-[10px] uppercase mb-2 tracking-widest font-bold">Sabor Dulce</p>
                     <p class="text-sm text-gray-500 mb-6 flex-grow">Reproduce la textura de la eyaculación masculina con un toque dulce placentero.</p>
@@ -114,7 +120,7 @@
                 </div>
 
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 flex flex-col hover:border-red-600/50 transition-all backdrop-blur-sm">
-                    <img src="sens5.png" alt="5 Sensaciones" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
+                    <img src="sens5.jpg" alt="5 Sensaciones" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
                     <h3 class="brand-font text-2xl mb-2 italic text-red-500">5 SENSACIONES</h3>
                     <p class="text-gray-400 text-[10px] uppercase mb-2 tracking-widest font-bold">Multiefecto</p>
                     <p class="text-sm text-gray-500 mb-6 flex-grow">Fórmula con Aloe Vera que ofrece frío, calor, sabor y lubricación duradera.</p>
@@ -123,7 +129,7 @@
                 </div>
 
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 flex flex-col hover:border-red-600/50 transition-all backdrop-blur-sm">
-                    <img src="natural.png" alt="Elixir Natural" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
+                    <img src="natural.jpg" alt="Elixir Natural" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
                     <h3 class="brand-font text-2xl mb-2 italic text-red-500">ELIXIR NATURAL</h3>
                     <p class="text-gray-400 text-[10px] uppercase mb-2 tracking-widest font-bold">Ginecológico</p>
                     <p class="text-sm text-gray-500 mb-6 flex-grow">Fórmula pura a base de agua, pH balanceado, sin fragancias ni colorantes.</p>
@@ -132,7 +138,7 @@
                 </div>
 
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 flex flex-col hover:border-red-600/50 transition-all backdrop-blur-sm">
-                    <img src="sachet.png" alt="X-Bull" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
+                    <img src="sachet.jpg" alt="X-Bull" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
                     <h3 class="brand-font text-2xl mb-2 italic text-red-500">X-BULL SACHET</h3>
                     <p class="text-gray-400 text-[10px] uppercase mb-2 tracking-widest font-bold">Energía Sexual</p>
                     <p class="text-sm text-gray-500 mb-6 flex-grow">Potenciador natural para mayor resistencia física y una energía imparable.</p>
@@ -141,7 +147,7 @@
                 </div>
 
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 flex flex-col hover:border-red-600/50 transition-all backdrop-blur-sm">
-                    <img src="vitaminas.png" alt="X-Bull Vitamin" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
+                    <img src="vitaminas.jpg" alt="X-Bull Vitamin" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
                     <h3 class="brand-font text-2xl mb-2 italic text-red-500">X-BULL VITAMIN</h3>
                     <p class="text-gray-400 text-[10px] uppercase mb-2 tracking-widest font-bold">Vitalidad Diaria</p>
                     <p class="text-sm text-gray-500 mb-6 flex-grow">Suplemento diseñado para elevar la confianza y mantener el vigor masculino.</p>
@@ -150,7 +156,7 @@
                 </div>
 
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 flex flex-col hover:border-red-600/50 transition-all backdrop-blur-sm">
-                    <img src="friction.png" alt="Friction Gel" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
+                    <img src="friction.jpg" alt="Friction Gel" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
                     <h3 class="brand-font text-2xl mb-2 italic text-red-500">FRICTION GEL</h3>
                     <p class="text-gray-400 text-[10px] uppercase mb-2 tracking-widest font-bold">Efecto Estrechante</p>
                     <p class="text-sm text-gray-500 mb-6 flex-grow">Tonifica y contrae paredes vaginales para una fricción y placer más intensos.</p>
@@ -159,7 +165,7 @@
                 </div>
 
                 <div class="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 flex flex-col hover:border-red-600/50 transition-all backdrop-blur-sm">
-                    <img src="saboror.png" alt="Sabores Elixir" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
+                    <img src="saboror.jpg" alt="Sabores Elixir" class="h-48 w-full object-contain mb-6 drop-shadow-xl">
                     <h3 class="brand-font text-2xl mb-2 italic text-red-500">ELIXIR SABORES</h3>
                     <p class="text-gray-400 text-[10px] uppercase mb-2 tracking-widest font-bold">Efecto Térmico</p>
                     <p class="text-sm text-gray-500 mb-6 flex-grow">Sabores ardientes (Fresa, Coco, Chicle) que elevan la pasión en pareja.</p>
