@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es-CO" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAX PLACER - Sex Shop Online</title>
+    <title>MAX PLACER - Sex Shop Online en Colombia con Envío Discreto</title>
+    <meta name="description" content="Sex shop online en Colombia con envío discreto a todo el país. Potenciadores, retardantes y lubricantes 100% naturales. Pide por WhatsApp y recibe en tu casa.">
+    <link rel="canonical" href="https://maxplacer.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MAX PLACER">
+    <meta property="og:title" content="MAX PLACER - Sex Shop Online en Colombia con Envío Discreto">
+    <meta property="og:description" content="Potenciadores, retardantes y lubricantes 100% naturales. Envío discreto a todo Colombia. Pide por WhatsApp.">
+    <meta property="og:image" content="https://maxplacer.com/Logo%20Max%20PowerCompleto.png">
+    <meta property="og:url" content="https://maxplacer.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MAX PLACER - Sex Shop Online en Colombia con Envío Discreto">
+    <meta name="twitter:description" content="Potenciadores, retardantes y lubricantes 100% naturales. Envío discreto a todo Colombia.">
+    <meta name="twitter:image" content="https://maxplacer.com/Logo%20Max%20PowerCompleto.png">
+
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MAX PLACER",
+      "url": "https://maxplacer.com/",
+      "logo": "https://maxplacer.com/Logo%20Max%20PowerCompleto.png",
+      "description": "Sex shop online en Colombia con envío discreto a todo el país.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CO"
+      }
+    }
+    </script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWWHXGRC9Q"></script>
     <script>
@@ -26,7 +55,7 @@
     <div id="age-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-4 hidden">
         <div class="max-w-md w-full bg-zinc-900 border border-red-600 rounded-2xl p-8 text-center shadow-2xl">
             <i data-lucide="alert-triangle" class="w-16 h-16 text-red-600 mx-auto mb-4"></i>
-            <h1 class="text-3xl font-bold mb-4 brand-font uppercase">Contenido Adulto</h1>
+            <p class="text-3xl font-bold mb-4 brand-font uppercase">Contenido Adulto</p>
             <p class="text-gray-400 mb-8">Este sitio contiene material para adultos. Debes ser mayor de 18 años.</p>
             <button onclick="verifyAge()" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-full transition-all active:scale-95 brand-font">
                 SOY MAYOR DE EDAD
@@ -42,6 +71,7 @@
             </a>
             <div class="hidden md:flex space-x-8 text-xl font-bold uppercase brand-font">
                 <a href="productos.html" class="hover:text-red-500 transition-colors">Productos</a>
+                <a href="blog.html" class="hover:text-red-500 transition-colors">Blog</a>
                 <a href="#contacto" class="hover:text-red-500 transition-colors">Contacto</a>
             </div>
             <button onclick="toggleMenu()" class="md:hidden text-white" aria-label="Abrir menú">
@@ -50,6 +80,7 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-zinc-800 px-4 py-4 space-y-4 text-lg font-bold uppercase brand-font">
             <a href="productos.html" class="block hover:text-red-500 transition-colors" onclick="toggleMenu()">Productos</a>
+            <a href="blog.html" class="block hover:text-red-500 transition-colors" onclick="toggleMenu()">Blog</a>
             <a href="#contacto" class="block hover:text-red-500 transition-colors" onclick="toggleMenu()">Contacto</a>
         </div>
     </nav>
